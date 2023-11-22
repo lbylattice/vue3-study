@@ -6,7 +6,6 @@ import {
     ElButton,
     ElTable,
     ElAlert,
-    ElAside,
     ElAutocomplete,
     ElAvatar,
     ElBacktop,
@@ -16,14 +15,23 @@ import {
     ElForm,
     ElFormItem,
     ElInput,
-    ElMessage
+    ElMessage,
+    ElContainer,
+    ElHeader,
+    ElAside,
+    ElMain,
+    ElCarousel,
+    ElCarouselItem,
+    ElLink,
+    ElImage,
+    ElRow,
+    ElCol
 } from 'element-plus'
 import 'element-plus/es/components/message/style/css'
 const components = [
     ElButton,
     ElTable,
     ElAlert,
-    ElAside,
     ElAutocomplete,
     ElAvatar,
     ElBacktop,
@@ -33,7 +41,17 @@ const components = [
     ElForm,
     ElFormItem,
     ElInput,
-    ElMessage
+    ElMessage,
+    ElContainer,
+    ElHeader,
+    ElAside,
+    ElMain,
+    ElCarousel,
+    ElCarouselItem,
+    ElLink,
+    ElImage,
+    ElRow,
+    ElCol
 ]
 
 

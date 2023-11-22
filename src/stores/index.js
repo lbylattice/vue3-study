@@ -4,6 +4,7 @@ export const useDefaultStore = defineStore('default', {
     state: () => {
         return {
             token: '',
+            goal: ''
         }
     },
     // 也可以这样定义
@@ -11,6 +12,9 @@ export const useDefaultStore = defineStore('default', {
     actions: {
         setToken(val) {
             this.token = val
+        },
+        setGoal(val) {
+            this.goal = val
         },
     },
 })

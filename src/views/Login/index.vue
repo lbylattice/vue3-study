@@ -30,7 +30,6 @@ const login = async () => {
         router.push({ path: 'Home' })
       } else {
         ElMessage({ message: 'Incorrect username or password', type: 'error', grouping: true })
-        // console.log("false");
       }
     } else {
       console.log("error submit!", fields);

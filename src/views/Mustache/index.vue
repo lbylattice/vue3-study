@@ -8,9 +8,6 @@ const msg = ref('进入mustache语法')
 
 <template>
   <div><span>{{ msg }}</span></div>
-  
 </template>
 
-<style>
-
-</style>
+<style lang="less" scoped></style>
