@@ -2,9 +2,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
-import { menulist } from '@/enmus';
-
-// 
+import { menulist } from '@/enmus'
 </script>
 
 <template>
@@ -22,7 +20,7 @@ import { menulist } from '@/enmus';
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="less">
 .container {
   width: 100%;
   height: 100%;

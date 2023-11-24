@@ -1,5 +1,3 @@
-
-
 <script setup>
 import { ref } from "vue";
 const msg = ref('进入mustache语法')

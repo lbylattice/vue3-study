@@ -22,13 +22,5 @@ import Aside from './components/Aside.vue'
 <style scoped lang="less">
 .container {
 	height: 100vh;
-
-	.bottom-container {
-		// height: 100%;s
-
-		.aside {
-			// height: 100%;
-		}
-	}
 }
 </style>

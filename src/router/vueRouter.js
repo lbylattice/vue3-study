@@ -19,12 +19,12 @@ const Router = [
 				children: [
 					{
 						path: '/vueRouter/Home',
-						name: 'VueRouterHome',
+						name: '12345',
 						component: () => import('@/views/VueRouter')
 					},
 					{
 						path: '/vueRouter/Home',
-						name: 'VueRouterHome',
+						name: '6789',
 						component: () => import('@/views/VueRouter'),
 					}
 				]

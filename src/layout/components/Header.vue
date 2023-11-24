@@ -33,11 +33,11 @@ const getItem = (item, index) => {
 <style lang="less" scoped>
 .header {
 	position: relative;
-	background-color: rgb(247, 247, 247);
-	height: 80px;
+	background-color: #f6d6d6;
+	height: 70px;
 
 	.botton-group {
-		height: 50px;
+		height: 40px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
