@@ -25,7 +25,12 @@ import {
     ElLink,
     ElImage,
     ElRow,
-    ElCol
+    ElCol,
+    ElScrollbar,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItem,
+
 } from 'element-plus'
 import 'element-plus/es/components/message/style/css'
 const components = [
@@ -51,7 +56,11 @@ const components = [
     ElLink,
     ElImage,
     ElRow,
-    ElCol
+    ElCol,
+    ElScrollbar,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItem,
 ]
 
 

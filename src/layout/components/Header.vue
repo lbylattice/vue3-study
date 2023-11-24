@@ -21,9 +21,9 @@ const getItem = (item, index) => {
 <template>
 	<el-header class="header">
 		<div class="botton-group">
-			<el-button v-for="(item, index) in menulist" :key="item" class="button" size="large" @click="getItem(item, index)"
-				ref="buttonItem">
-				{{ item }}
+			<el-button v-for="(item, index) in menulist" :key="item.name" class="button" size="large"
+				@click="getItem(item, index)" ref="buttonItem">
+				{{ item.name }}
 			</el-button>
 		</div>
 	</el-header>

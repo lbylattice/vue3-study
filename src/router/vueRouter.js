@@ -5,11 +5,31 @@ const Router = [
 		name: 'layout',
 		path: '/vueRouter',
 		component: layout,
-		// children: [{
-		// 	path: '/Mustache',
-		// 	name: 'Mustache',
-		// 	component: () => import('@/views/Mustache'),
-		// }]
+		children: [
+			{
+				path: '/vueRouter/Home',
+				name: 'VueRouterHome',
+				component: () => import('@/views/VueRouter'),
+
+			},
+			{
+				path: '/vueRouter/Mustache',
+				name: 'Mustache',
+				component: () => import('@/views/VueRouter/Mustache'),
+				children: [
+					{
+						path: '/vueRouter/Home',
+						name: 'VueRouterHome',
+						component: () => import('@/views/VueRouter')
+					},
+					{
+						path: '/vueRouter/Home',
+						name: 'VueRouterHome',
+						component: () => import('@/views/VueRouter'),
+					}
+				]
+			},
+		],
 	},
 ]
 

@@ -6,18 +6,29 @@ import Aside from './components/Aside.vue'
 
 <template>
 	<div>
-		<el-container direction="vertical">
+		<el-container direction="vertical" class="container">
 			<Header />
-			<el-container>
-				<Aside />
+			<el-container class="bottom-container">
+				<Aside class="aside" />
 				<el-container>
-					<router-view></router-view>
-					<!-- <el-main>Main</el-main> -->
-					<el-footer>Footer</el-footer>
+					<router-view>
+					</router-view>
 				</el-container>
 			</el-container>
 		</el-container>
 	</div>
 </template>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+.container {
+	height: 100vh;
+
+	.bottom-container {
+		// height: 100%;s
+
+		.aside {
+			// height: 100%;
+		}
+	}
+}
+</style>

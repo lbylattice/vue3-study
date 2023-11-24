@@ -56,7 +56,7 @@ import { menulist } from '@/enmus';
   }
 }
 
-:deep .el-carousel__container {
+:deep(.el-carousel__container) {
   height: 100%;
 }
 </style>
