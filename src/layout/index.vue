@@ -10,7 +10,7 @@ import Aside from './components/Aside.vue'
 			<Header />
 			<el-container class="bottom-container">
 				<Aside class="aside" />
-				<el-container>
+				<el-container class="content">
 					<router-view>
 					</router-view>
 				</el-container>
@@ -22,5 +22,13 @@ import Aside from './components/Aside.vue'
 <style scoped lang="less">
 .container {
 	height: 100vh;
+	background-color: rgb(243, 243, 243);
+
+	.content {
+		background-color: #fff;
+		padding: 16px;
+		margin: 16px;
+		border-radius: 4px;
+	}
 }
 </style>

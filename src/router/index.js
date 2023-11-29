@@ -2,6 +2,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 const files = require.context('.', true, /\.js$/)
 const staticRoutes = [
 	{
+		path: '/:pathMatch(.*)',
+		redirect: '/404',
+		hidden: true,
+	},
+	{
+		path: '/404',
+		name: '404',
+		component: () => import('@/views/404')
+	},
+	{
 		path: '/Login',
 		name: 'Login',
 		component: () => import('@/views/Login'),
@@ -18,6 +28,7 @@ const staticRoutes = [
 		path: '/',
 		redirect: 'Home'
 	},
+
 ];
 
 // 路由配置

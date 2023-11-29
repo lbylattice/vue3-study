@@ -27,7 +27,7 @@ const defaultActive = computed(() => {
 	<el-aside class="aside">
 		<el-scrollbar>
 			<el-menu :collapse="false" background-color="#fff" style="height: 550px" :default-active="defaultActive"
-				:collapse-transition="true">
+				:collapse-transition="true" :router="true">
 				<Menu v-for="items of menuList" :key="items.name" :items="items" />
 			</el-menu>
 		</el-scrollbar>

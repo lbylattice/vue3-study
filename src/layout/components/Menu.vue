@@ -11,11 +11,11 @@ defineProps({
 })
 </script>
 <template>
-	<el-sub-menu v-if="items.children" :index="items.name">
+	<el-sub-menu v-if="items.children" :index="items.path">
 		<template #title>{{ items.name }}</template>
 		<Menu v-for="items of items.children" :key="items.name" :items="items" />
 	</el-sub-menu>
-	<el-menu-item :index="items.name" v-else>
+	<el-menu-item :index="items.path" v-else>
 		{{ items.name }}
 	</el-menu-item>
 </template>
