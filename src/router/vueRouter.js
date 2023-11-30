@@ -12,12 +12,12 @@ const Router = [
 				component: () => import('@/views/VueRouter'),
 			},
 			{
-				path: '',
+				path: '/vueRouter/dynamic',
 				name: 'VueRouterDynamic',
 				children: [
 					{
 						path: '/vueRouter/dynamic/home',
-						name: 'home',
+						name: 'DynamicHome',
 						component: () => import('@/views/VueRouter/Dynamic'),
 					},
 					{
@@ -25,27 +25,33 @@ const Router = [
 						name: 'case one',
 						component: () => import('@/views/VueRouter/Dynamic/CaseOne')
 					},
-					// {
-					// 	path: '/vueRouter/dynamic/CaseTwo',
-					// 	name: 'case two',
-					// 	component: () => import('@/views/VueRouter/Dynamic/CaseTwo'),
-					// }
 				]
 			},
 			{
-				path: '/vueRouter/Mustache',
-				name: 'Mustache',
-				component: () => import('@/views/VueRouter/Mustache'),
+				path: '/vueRouter/setup',
+				name: 'setup',
 				children: [
 					{
-						path: '/vueRouter/xxx',
-						name: '12345',
-						component: () => import('@/views/VueRouter')
+						path: '/vueRouter/setup/home',
+						name: 'setuphome',
+						component: () => import('@/views/VueRouter/Setup'),
+					},
+				]
+			},
+			{
+				path: '/vueRouter/Scorll',
+				name: 'Scorll',
+				component: () => import('@/views/VueRouter/Scorll'),
+				children: [
+					{
+						path: '/vueRouter/Scorll/home',
+						name: 'home',
+						component: () => import('@/views/VueRouter/Scorll')
 					},
 					{
-						path: '/vueRouter/yyy',
+						path: '/vueRouter/Scorll',
 						name: '6789',
-						component: () => import('@/views/VueRouter'),
+						component: () => import('@/views/VueRouter/Scorll'),
 					}
 				]
 			},

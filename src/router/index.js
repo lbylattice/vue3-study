@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 const files = require.context('.', true, /\.js$/)
 const staticRoutes = [
-	{
-		path: '/:pathMatch(.*)',
-		redirect: '/404',
-		hidden: true,
-	},
+	// {
+	// 	path: '/:pathMatch(.*)',
+	// 	redirect: '/404',
+	// 	hidden: true,
+	// },
 	{
 		path: '/404',
 		name: '404',

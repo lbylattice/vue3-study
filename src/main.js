@@ -35,6 +35,8 @@ import {
 
 } from 'element-plus'
 import 'element-plus/es/components/message/style/css'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
 const components = [
 	ElButton,
 	ElTable,
@@ -70,6 +72,9 @@ const app = createApp(App)
 app.use(pania)
 for (const cpn of components) {
 	app.component(cpn.name, cpn)
+}
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+	app.component(key, component)
 }
 
 Object.keys(directives).forEach((e) => app.directive(e, directives[e]))

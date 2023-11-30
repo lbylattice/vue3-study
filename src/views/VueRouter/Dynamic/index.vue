@@ -23,7 +23,7 @@ router.push({ name: 'case one', params: { case: item } })`
   <div>
     <span>{{ msg }}</span>
     <CodeView :content="content" />
-    <div>
+    <div> 
       <el-button v-for="item in 2" :key="item" style="display: inline-block;" type="primary"
         @click="routerChange(item)">{{ 'case' + item }}</el-button>
     </div>
